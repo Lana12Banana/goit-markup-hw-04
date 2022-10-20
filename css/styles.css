@@ -114,6 +114,35 @@ h1,h2,h3,h4,h5,h6,p,ul {
     height: 70px;
 }
 
+/* Наші клієнти */
+
+.companies-logo-list {
+    display: flex;
+    gap: 30px;
+}
+
+.companies-list-item .company-icon {
+    display: flex;
+    justify-content: center;
+    width: 170px;
+    height:92px;
+    padding: 16px 32px;
+    border: 1px solid var(--icons-grey);
+    border-radius: 4px;
+}
+
+.companies-list-item .company-icon:hover {
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.company-icon {
+    width: 106px;
+    height: 60px;
+    fill: var(--icons-grey)
+}
+
+
 .site-nav {
     display: flex;
     margin-left: 93px;
@@ -209,23 +238,24 @@ color: var(--accent-color);
     gap: 30px;
 }
 
-.contacts-icon-email {
-    width: 16px;
-    height: 12px;
+.header-contact-icon {
     margin-right: 10px;
+    fill: var(--description-text-color);
 }
 
-
-
-.contacts-icon-smartphone {
-    width: 10px;
-    height: 16px;
-    margin-right: 10px;
-}
-
-.contacts-header a:hover {
+.header-contact-icon:hover {
     fill: var(--accent-color);
 }
+
+
+.contacts-icon-smartphone,
+.contacts-icon-email {
+    margin-right: 10px;
+}
+
+/*.contacts-header a:hover {
+    fill: var(--accent-color);
+}*/
 
 
 /* Hero */
