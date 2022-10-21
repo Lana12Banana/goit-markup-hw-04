@@ -131,17 +131,17 @@ h1,h2,h3,h4,h5,h6,p,ul {
     border-radius: 4px;
 }
 
-.companies-list-item .company-icon:hover {
-    fill: var(--accent-color);
-    border-color: var(--accent-color);
-}
-
 .company-icon {
     width: 106px;
     height: 60px;
     fill: var(--icons-grey)
 }
 
+.companies-list-item .company-icon:hover,
+.companies-list-item .company-icon:focus {
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
+}
 
 .site-nav {
     display: flex;
@@ -243,7 +243,8 @@ color: var(--accent-color);
     fill: var(--description-text-color);
 }
 
-.header-contact-icon:hover {
+.header-contact-icon:hover,
+.header-contact-icon:focus {
     fill: var(--accent-color);
 }
 
@@ -267,12 +268,10 @@ color: var(--accent-color);
 
 .overlay {
     max-width: 1600px;
-    min-height: 600px;
     margin-left: auto;
     margin-right: auto;
     background-color: #C4C4C4;
-    background-image:linear-gradient(rgba(47, 48, 58, 0.4));
-    background-image: url(../images/header.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4), url(../images/header.jpg));
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -411,7 +410,8 @@ color: var(--accent-color);
     margin-bottom: 0;
 }
 
-.portfolio-element:hover {
+.portfolio-element:hover,
+.portfolio-element:focus {
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -482,6 +482,7 @@ color: var(--accent-color);
     border: 1px solid transparent;
     background-color: var(--secondary-bg-color);
     font-family: inherit;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0.03em;
@@ -604,7 +605,8 @@ ul .active {
     gap: 10px;
 }
 
-.button-footer-icon:hover {
+.button-footer-icon:hover,
+.button-footer-icon:focus {
     background-color: var(--accent-color);
 }
 
@@ -629,12 +631,10 @@ ul .active {
     cursor: pointer;
 }
 
-.button-team-icon:hover {
-    background-color: var(--accent-color);
-    border-radius: 50%;
-}
 
-.button-team-icon a:hover {
+
+.button-team-icon a:hover,
+.button-team-icon a:focus {
     fill: var(--white-color);
 }
 
@@ -644,8 +644,15 @@ ul .active {
     fill: var(--icons-grey);
 }
 
-.button-team-icon:hover .team-icon {
+.button-team-icon:hover .team-icon,
+.button-team-icon:focus .team-icon {
     fill: var(--white-color)
+}
+
+.button-team-icon:hover,
+.button-team-icon:focus {
+    background-color: var(--accent-color);
+    border-radius: 50%;
 }
 
 .team-icons-list li+li {
