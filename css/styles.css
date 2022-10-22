@@ -137,8 +137,7 @@ h1,h2,h3,h4,h5,h6,p,ul {
     fill: var(--icons-grey)
 }
 
-.companies-list-item .company-icon:hover,
-.companies-list-item .company-icon:focus {
+.companies-list-item .company-icon:hover {
     fill: var(--accent-color);
     border-color: var(--accent-color);
 }
@@ -199,7 +198,7 @@ h1,h2,h3,h4,h5,h6,p,ul {
 .site-nav .link:focus,
 .contacts-list .link:hover,
 .contacts-list .link:focus {
-color: var(--accent-color);
+    color: var(--accent-color);
 }
 
 .contacts-item:hover,
@@ -271,7 +270,7 @@ color: var(--accent-color);
     margin-left: auto;
     margin-right: auto;
     background-color: #C4C4C4;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4), url(../images/header.jpg));
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -642,6 +641,10 @@ ul .active {
     width: 20px;
     height: 20px;
     fill: var(--icons-grey);
+}
+
+.team-icon:focus {
+    fill: currentColor;
 }
 
 .button-team-icon:hover .team-icon,
