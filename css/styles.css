@@ -101,10 +101,10 @@ h1,h2,h3,h4,h5,h6,p,ul {
 .advantages-item-icon {
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
     height: 120px;
     width: 270px;
-    padding-top: 25px;
-    padding-bottom: 25px;
     background: var(--secondary-bg-color);
     border-radius: 4px;
 }
@@ -121,12 +121,13 @@ h1,h2,h3,h4,h5,h6,p,ul {
     gap: 30px;
 }
 
-.companies-list-item .company-icon {
+.company-logo-icons {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 170px;
     height:92px;
-    padding: 16px 32px;
+    /*padding: 16px 32px;*/
     border: 1px solid var(--icons-grey);
     border-radius: 4px;
 }
@@ -134,13 +135,20 @@ h1,h2,h3,h4,h5,h6,p,ul {
 .company-icon {
     width: 106px;
     height: 60px;
-    fill: var(--icons-grey)
+    fill: var(--icons-grey);
+    border-color: var(--icons-grey);
 }
 
-.companies-list-item .company-icon:hover {
+.company-logo-icons:hover,
+.company-logo-icons:focus {
+    border-color: var(--accent-color);
+    fill: var(--accent-color);
+}
+
+/*.companies-list-item .company-icon:hover {
     fill: var(--accent-color);
     border-color: var(--accent-color);
-}
+}*/
 
 .site-nav {
     display: flex;
@@ -176,7 +184,7 @@ h1,h2,h3,h4,h5,h6,p,ul {
 
 .workers-info {
     padding-top: 30px;
-    padding-bottom: 16px;
+    padding-bottom: 30px;
 }
 
 /*.site-nav li:not(:last-child) {
@@ -238,7 +246,6 @@ h1,h2,h3,h4,h5,h6,p,ul {
 }
 
 .header-contact-icon {
-    margin-right: 10px;
     fill: var(--description-text-color);
 }
 
@@ -309,7 +316,6 @@ h1,h2,h3,h4,h5,h6,p,ul {
 .advantages-title {
     margin-top: 0;
     margin-bottom: 10px;
-    padding-top: 60px;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
@@ -361,6 +367,7 @@ h1,h2,h3,h4,h5,h6,p,ul {
 
 .position {
     margin-top: 0;
+    margin-bottom: 16px;
     color: var(--description-text-color);
     font-size: 16px;
     line-height: 1.18;
@@ -601,7 +608,6 @@ ul .active {
 
 .footer-icons-list {
     display: flex;
-    gap: 10px;
 }
 
 .button-footer-icon:hover,
@@ -626,37 +632,31 @@ ul .active {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background-color: var(--white-color);
+    color: var(--icons-grey);
     cursor: pointer;
-}
-
-
-
-.button-team-icon a:hover,
-.button-team-icon a:focus {
-    fill: var(--white-color);
 }
 
 .team-icon {
     width: 20px;
     height: 20px;
-    fill: var(--icons-grey);
-}
-
-.team-icon:focus {
     fill: currentColor;
-}
-
-.button-team-icon:hover .team-icon,
-.button-team-icon:focus .team-icon {
-    fill: var(--white-color)
 }
 
 .button-team-icon:hover,
 .button-team-icon:focus {
     background-color: var(--accent-color);
+    color: var(--white-color);
     border-radius: 50%;
 }
+
+/*.button-team-icon {
+    fill: var(--icons-grey);
+}
+
+.button-team-icon:hover,
+.button-team-icon:focus {
+    fill: var(--accent-color);
+}*/
 
 .team-icons-list li+li {
     margin-left: 10px;
@@ -665,7 +665,6 @@ ul .active {
 .team-icons-list {
     display: flex;
     justify-content: center;
-    padding-bottom: 30px;
 }
 
 .footer-line {
